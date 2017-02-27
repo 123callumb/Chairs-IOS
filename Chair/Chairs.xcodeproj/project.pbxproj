@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		758E82B11E644EA6005EC565 /* Chair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82B11E644EA6005EC565 /* Chairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E82B51E644EA6005EC565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		758E82B71E644EA6005EC565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		758E82B81E644EA6005EC565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,10 +52,10 @@
 		758E82C71E644EA6005EC565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758E82CA1E644EA6005EC565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758E82CC1E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		758E82D11E644EA6005EC565 /* ChairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82D11E644EA6005EC565 /* ChairsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E82D51E644EA6005EC565 /* ChairTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChairTests.m; sourceTree = "<group>"; };
 		758E82D71E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		758E82DC1E644EA6005EC565 /* ChairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82DC1E644EA6005EC565 /* ChairsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E82E01E644EA6005EC565 /* ChairUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChairUITests.m; sourceTree = "<group>"; };
 		758E82E21E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,9 +98,9 @@
 		758E82B21E644EA6005EC565 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				758E82B11E644EA6005EC565 /* Chair.app */,
-				758E82D11E644EA6005EC565 /* ChairTests.xctest */,
-				758E82DC1E644EA6005EC565 /* ChairUITests.xctest */,
+				758E82B11E644EA6005EC565 /* Chairs.app */,
+				758E82D11E644EA6005EC565 /* ChairsTests.xctest */,
+				758E82DC1E644EA6005EC565 /* ChairsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		758E82B01E644EA5005EC565 /* Chair */ = {
+		758E82B01E644EA5005EC565 /* Chairs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chair" */;
+			buildConfigurationList = 758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chairs" */;
 			buildPhases = (
 				758E82AD1E644EA5005EC565 /* Sources */,
 				758E82AE1E644EA5005EC565 /* Frameworks */,
@@ -166,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = Chair;
+			name = Chairs;
 			productName = Chair;
-			productReference = 758E82B11E644EA6005EC565 /* Chair.app */;
+			productReference = 758E82B11E644EA6005EC565 /* Chairs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		758E82D01E644EA6005EC565 /* ChairTests */ = {
+		758E82D01E644EA6005EC565 /* ChairsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairTests" */;
+			buildConfigurationList = 758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairsTests" */;
 			buildPhases = (
 				758E82CD1E644EA6005EC565 /* Sources */,
 				758E82CE1E644EA6005EC565 /* Frameworks */,
@@ -184,14 +184,14 @@
 			dependencies = (
 				758E82D31E644EA6005EC565 /* PBXTargetDependency */,
 			);
-			name = ChairTests;
+			name = ChairsTests;
 			productName = ChairTests;
-			productReference = 758E82D11E644EA6005EC565 /* ChairTests.xctest */;
+			productReference = 758E82D11E644EA6005EC565 /* ChairsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		758E82DB1E644EA6005EC565 /* ChairUITests */ = {
+		758E82DB1E644EA6005EC565 /* ChairsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairUITests" */;
+			buildConfigurationList = 758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairsUITests" */;
 			buildPhases = (
 				758E82D81E644EA6005EC565 /* Sources */,
 				758E82D91E644EA6005EC565 /* Frameworks */,
@@ -202,9 +202,9 @@
 			dependencies = (
 				758E82DE1E644EA6005EC565 /* PBXTargetDependency */,
 			);
-			name = ChairUITests;
+			name = ChairsUITests;
 			productName = ChairUITests;
-			productReference = 758E82DC1E644EA6005EC565 /* ChairUITests.xctest */;
+			productReference = 758E82DC1E644EA6005EC565 /* ChairsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chair" */;
+			buildConfigurationList = 758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chairs" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				758E82B01E644EA5005EC565 /* Chair */,
-				758E82D01E644EA6005EC565 /* ChairTests */,
-				758E82DB1E644EA6005EC565 /* ChairUITests */,
+				758E82B01E644EA5005EC565 /* Chairs */,
+				758E82D01E644EA6005EC565 /* ChairsTests */,
+				758E82DB1E644EA6005EC565 /* ChairsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,12 +317,12 @@
 /* Begin PBXTargetDependency section */
 		758E82D31E644EA6005EC565 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 758E82B01E644EA5005EC565 /* Chair */;
+			target = 758E82B01E644EA5005EC565 /* Chairs */;
 			targetProxy = 758E82D21E644EA6005EC565 /* PBXContainerItemProxy */;
 		};
 		758E82DE1E644EA6005EC565 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 758E82B01E644EA5005EC565 /* Chair */;
+			target = 758E82B01E644EA5005EC565 /* Chairs */;
 			targetProxy = 758E82DD1E644EA6005EC565 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chair.app/Chair";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chairs.app/Chairs";
 			};
 			name = Debug;
 		};
@@ -483,7 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chair.app/Chair";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chairs.app/Chairs";
 			};
 			name = Release;
 		};
@@ -514,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chair" */ = {
+		758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chairs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				758E82E31E644EA6005EC565 /* Debug */,
@@ -523,29 +523,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chair" */ = {
+		758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chairs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				758E82E61E644EA6005EC565 /* Debug */,
 				758E82E71E644EA6005EC565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairTests" */ = {
+		758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				758E82E91E644EA6005EC565 /* Debug */,
 				758E82EA1E644EA6005EC565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairUITests" */ = {
+		758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				758E82EC1E644EA6005EC565 /* Debug */,
 				758E82ED1E644EA6005EC565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

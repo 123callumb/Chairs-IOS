@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "758E82B01E644EA5005EC565"
-               BuildableName = "Chair.app"
-               BlueprintName = "Chair"
-               ReferencedContainer = "container:Chair.xcodeproj">
+               BuildableName = "Chairs.app"
+               BlueprintName = "Chairs"
+               ReferencedContainer = "container:Chairs.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "758E82D01E644EA6005EC565"
-               BuildableName = "ChairTests.xctest"
-               BlueprintName = "ChairTests"
-               ReferencedContainer = "container:Chair.xcodeproj">
+               BuildableName = "ChairsTests.xctest"
+               BlueprintName = "ChairsTests"
+               ReferencedContainer = "container:Chairs.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "758E82DB1E644EA6005EC565"
-               BuildableName = "ChairUITests.xctest"
-               BlueprintName = "ChairUITests"
-               ReferencedContainer = "container:Chair.xcodeproj">
+               BuildableName = "ChairsUITests.xctest"
+               BlueprintName = "ChairsUITests"
+               ReferencedContainer = "container:Chairs.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "758E82B01E644EA5005EC565"
-            BuildableName = "Chair.app"
-            BlueprintName = "Chair"
-            ReferencedContainer = "container:Chair.xcodeproj">
+            BuildableName = "Chairs.app"
+            BlueprintName = "Chairs"
+            ReferencedContainer = "container:Chairs.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "758E82B01E644EA5005EC565"
-            BuildableName = "Chair.app"
-            BlueprintName = "Chair"
-            ReferencedContainer = "container:Chair.xcodeproj">
+            BuildableName = "Chairs.app"
+            BlueprintName = "Chairs"
+            ReferencedContainer = "container:Chairs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "758E82B01E644EA5005EC565"
-            BuildableName = "Chair.app"
-            BlueprintName = "Chair"
-            ReferencedContainer = "container:Chair.xcodeproj">
+            BuildableName = "Chairs.app"
+            BlueprintName = "Chairs"
+            ReferencedContainer = "container:Chairs.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
