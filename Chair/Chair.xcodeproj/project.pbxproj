@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758E82B61E644EA6005EC565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82B51E644EA6005EC565 /* main.m */; };
+		758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82B81E644EA6005EC565 /* AppDelegate.m */; };
+		758E82BB1E644EA6005EC565 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 758E82BA1E644EA6005EC565 /* GameScene.sks */; };
+		758E82BD1E644EA6005EC565 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 758E82BC1E644EA6005EC565 /* Actions.sks */; };
+		758E82C01E644EA6005EC565 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82BF1E644EA6005EC565 /* GameScene.m */; };
+		758E82C31E644EA6005EC565 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82C21E644EA6005EC565 /* GameViewController.m */; };
+		758E82C61E644EA6005EC565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E82C41E644EA6005EC565 /* Main.storyboard */; };
+		758E82C81E644EA6005EC565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E82C71E644EA6005EC565 /* Assets.xcassets */; };
+		758E82CB1E644EA6005EC565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E82C91E644EA6005EC565 /* LaunchScreen.storyboard */; };
+		758E82D61E644EA6005EC565 /* ChairTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82D51E644EA6005EC565 /* ChairTests.m */; };
+		758E82E11E644EA6005EC565 /* ChairUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82E01E644EA6005EC565 /* ChairUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758E82D21E644EA6005EC565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758E82A91E644EA5005EC565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758E82B01E644EA5005EC565;
+			remoteInfo = Chair;
+		};
+		758E82DD1E644EA6005EC565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758E82A91E644EA5005EC565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758E82B01E644EA5005EC565;
+			remoteInfo = Chair;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		758E82B11E644EA6005EC565 /* Chair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82B51E644EA6005EC565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		758E82B71E644EA6005EC565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		758E82B81E644EA6005EC565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		758E82BA1E644EA6005EC565 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		758E82BC1E644EA6005EC565 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		758E82BE1E644EA6005EC565 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		758E82BF1E644EA6005EC565 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		758E82C11E644EA6005EC565 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		758E82C21E644EA6005EC565 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		758E82C51E644EA6005EC565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		758E82C71E644EA6005EC565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		758E82CA1E644EA6005EC565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		758E82CC1E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758E82D11E644EA6005EC565 /* ChairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82D51E644EA6005EC565 /* ChairTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChairTests.m; sourceTree = "<group>"; };
+		758E82D71E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758E82DC1E644EA6005EC565 /* ChairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E82E01E644EA6005EC565 /* ChairUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChairUITests.m; sourceTree = "<group>"; };
+		758E82E21E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		758E82AE1E644EA5005EC565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82CE1E644EA6005EC565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82D91E644EA6005EC565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758E82A81E644EA5005EC565 = {
+			isa = PBXGroup;
+			children = (
+				758E82B31E644EA6005EC565 /* Chair */,
+				758E82D41E644EA6005EC565 /* ChairTests */,
+				758E82DF1E644EA6005EC565 /* ChairUITests */,
+				758E82B21E644EA6005EC565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		758E82B21E644EA6005EC565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				758E82B11E644EA6005EC565 /* Chair.app */,
+				758E82D11E644EA6005EC565 /* ChairTests.xctest */,
+				758E82DC1E644EA6005EC565 /* ChairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		758E82B31E644EA6005EC565 /* Chair */ = {
+			isa = PBXGroup;
+			children = (
+				758E82B71E644EA6005EC565 /* AppDelegate.h */,
+				758E82B81E644EA6005EC565 /* AppDelegate.m */,
+				758E82BA1E644EA6005EC565 /* GameScene.sks */,
+				758E82BC1E644EA6005EC565 /* Actions.sks */,
+				758E82BE1E644EA6005EC565 /* GameScene.h */,
+				758E82BF1E644EA6005EC565 /* GameScene.m */,
+				758E82C11E644EA6005EC565 /* GameViewController.h */,
+				758E82C21E644EA6005EC565 /* GameViewController.m */,
+				758E82C41E644EA6005EC565 /* Main.storyboard */,
+				758E82C71E644EA6005EC565 /* Assets.xcassets */,
+				758E82C91E644EA6005EC565 /* LaunchScreen.storyboard */,
+				758E82CC1E644EA6005EC565 /* Info.plist */,
+				758E82B41E644EA6005EC565 /* Supporting Files */,
+			);
+			path = Chair;
+			sourceTree = "<group>";
+		};
+		758E82B41E644EA6005EC565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				758E82B51E644EA6005EC565 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		758E82D41E644EA6005EC565 /* ChairTests */ = {
+			isa = PBXGroup;
+			children = (
+				758E82D51E644EA6005EC565 /* ChairTests.m */,
+				758E82D71E644EA6005EC565 /* Info.plist */,
+			);
+			path = ChairTests;
+			sourceTree = "<group>";
+		};
+		758E82DF1E644EA6005EC565 /* ChairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				758E82E01E644EA6005EC565 /* ChairUITests.m */,
+				758E82E21E644EA6005EC565 /* Info.plist */,
+			);
+			path = ChairUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758E82B01E644EA5005EC565 /* Chair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chair" */;
+			buildPhases = (
+				758E82AD1E644EA5005EC565 /* Sources */,
+				758E82AE1E644EA5005EC565 /* Frameworks */,
+				758E82AF1E644EA5005EC565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chair;
+			productName = Chair;
+			productReference = 758E82B11E644EA6005EC565 /* Chair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		758E82D01E644EA6005EC565 /* ChairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairTests" */;
+			buildPhases = (
+				758E82CD1E644EA6005EC565 /* Sources */,
+				758E82CE1E644EA6005EC565 /* Frameworks */,
+				758E82CF1E644EA6005EC565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758E82D31E644EA6005EC565 /* PBXTargetDependency */,
+			);
+			name = ChairTests;
+			productName = ChairTests;
+			productReference = 758E82D11E644EA6005EC565 /* ChairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		758E82DB1E644EA6005EC565 /* ChairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairUITests" */;
+			buildPhases = (
+				758E82D81E644EA6005EC565 /* Sources */,
+				758E82D91E644EA6005EC565 /* Frameworks */,
+				758E82DA1E644EA6005EC565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758E82DE1E644EA6005EC565 /* PBXTargetDependency */,
+			);
+			name = ChairUITests;
+			productName = ChairUITests;
+			productReference = 758E82DC1E644EA6005EC565 /* ChairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		758E82A91E644EA5005EC565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kilcal;
+				TargetAttributes = {
+					758E82B01E644EA5005EC565 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T5F4852ZMN;
+						ProvisioningStyle = Automatic;
+					};
+					758E82D01E644EA6005EC565 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T5F4852ZMN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758E82B01E644EA5005EC565;
+					};
+					758E82DB1E644EA6005EC565 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T5F4852ZMN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758E82B01E644EA5005EC565;
+					};
+				};
+			};
+			buildConfigurationList = 758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 758E82A81E644EA5005EC565;
+			productRefGroup = 758E82B21E644EA6005EC565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				758E82B01E644EA5005EC565 /* Chair */,
+				758E82D01E644EA6005EC565 /* ChairTests */,
+				758E82DB1E644EA6005EC565 /* ChairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758E82AF1E644EA5005EC565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758E82C61E644EA6005EC565 /* Main.storyboard in Resources */,
+				758E82BB1E644EA6005EC565 /* GameScene.sks in Resources */,
+				758E82C81E644EA6005EC565 /* Assets.xcassets in Resources */,
+				758E82CB1E644EA6005EC565 /* LaunchScreen.storyboard in Resources */,
+				758E82BD1E644EA6005EC565 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82CF1E644EA6005EC565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82DA1E644EA6005EC565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		758E82AD1E644EA5005EC565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758E82C31E644EA6005EC565 /* GameViewController.m in Sources */,
+				758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */,
+				758E82C01E644EA6005EC565 /* GameScene.m in Sources */,
+				758E82B61E644EA6005EC565 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82CD1E644EA6005EC565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758E82D61E644EA6005EC565 /* ChairTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E82D81E644EA6005EC565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758E82E11E644EA6005EC565 /* ChairUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758E82D31E644EA6005EC565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758E82B01E644EA5005EC565 /* Chair */;
+			targetProxy = 758E82D21E644EA6005EC565 /* PBXContainerItemProxy */;
+		};
+		758E82DE1E644EA6005EC565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758E82B01E644EA5005EC565 /* Chair */;
+			targetProxy = 758E82DD1E644EA6005EC565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758E82C41E644EA6005EC565 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758E82C51E644EA6005EC565 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		758E82C91E644EA6005EC565 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758E82CA1E644EA6005EC565 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		758E82E31E644EA6005EC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		758E82E41E644EA6005EC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		758E82E61E644EA6005EC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = Chair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.Chair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		758E82E71E644EA6005EC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = Chair/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.Chair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		758E82E91E644EA6005EC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = ChairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chair.app/Chair";
+			};
+			name = Debug;
+		};
+		758E82EA1E644EA6005EC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = ChairTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chair.app/Chair";
+			};
+			name = Release;
+		};
+		758E82EC1E644EA6005EC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = ChairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Chair;
+			};
+			name = Debug;
+		};
+		758E82ED1E644EA6005EC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T5F4852ZMN;
+				INFOPLIST_FILE = ChairUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kilcal.ChairUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Chair;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758E82AC1E644EA5005EC565 /* Build configuration list for PBXProject "Chair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758E82E31E644EA6005EC565 /* Debug */,
+				758E82E41E644EA6005EC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758E82E51E644EA6005EC565 /* Build configuration list for PBXNativeTarget "Chair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758E82E61E644EA6005EC565 /* Debug */,
+				758E82E71E644EA6005EC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758E82E81E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758E82E91E644EA6005EC565 /* Debug */,
+				758E82EA1E644EA6005EC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758E82EB1E644EA6005EC565 /* Build configuration list for PBXNativeTarget "ChairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758E82EC1E644EA6005EC565 /* Debug */,
+				758E82ED1E644EA6005EC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 758E82A91E644EA5005EC565 /* Project object */;
+}
