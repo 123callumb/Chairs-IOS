@@ -20,9 +20,8 @@
     [background setImage:[UIImage imageNamed:@"background_menu"]];
     
     //play button
-    SEL aSel_play = @selector(play_button_action:);
     UIButton *play_button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [play_button addTarget:self action:aSel_play forControlEvents:UIControlEventTouchUpInside];
+    [play_button addTarget:self action:@selector(play_button_action:) forControlEvents:UIControlEventTouchUpInside];
     play_button.frame = CGRectMake((menu_view.frame.size.width/2)-((2*(menu_view.frame.size.width/3))/2),menu_view.frame.size.height/2-3.5*(169*(((2*(menu_view.frame.size.width/3))/1043))/2),2*(menu_view.frame.size.width/3),169*((2*(menu_view.frame.size.width/3))/1043));
     [play_button setImage:[UIImage imageNamed:@"button_play"]forState:UIControlStateNormal];
     //leaderboards button
@@ -48,12 +47,12 @@
 
 -(void)update:(CFTimeInterval)currentTime {
 }
-+(void)play_button_action:(id)sender{
+-(void)play_button_action:(id)sender{
 }
-+(void)leaderboards_button_action:(id)sender{
+-(void)leaderboards_button_action:(id)sender{
     
 }
-+(void)settings_button_action:(id)sender{
+-(void)settings_button_action:(id)sender{
     
 }
 @end
