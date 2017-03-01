@@ -48,10 +48,24 @@
     float buttonX = [self determineButtonPosition:skinNo buttonArea:buttonArea].x;
     float buttonY = [self determineButtonPosition:skinNo buttonArea:buttonArea].y;
     
+    [skinButton setTag:(skinNo + 200)];
     [skinButton setImage:skinImage forState:UIControlStateNormal];
     [skinButton setFrame:CGRectMake(buttonX, buttonY, buttonArea, buttonArea)];
+    [skinButton addTarget:self action:@selector(onSkinPress:) forControlEvents:UIControlEventTouchUpInside];
+    
+    if([[self getCurrentSkin] isEqualToString:[[self skinList] objectAtIndex:skinNo]]){
+        UIImage *tickImage = [UIImage imageNamed:@"tick"];
+        UIImageView *tick = [[UIImageView alloc] initWithImage:tickImage];
+        
+        float tickArea = buttonArea/2.5;
+        
+        [tick setFrame:CGRectMake(buttonArea - tickArea, buttonArea - tickArea, tickArea, tickArea)];
+        [skinButton addSubview:tick];
+        NSLog(@"%d is currently selected", skinNo);
+    }
     
     [v addSubview:skinButton];
+
     
 }
 +(CGPoint)determineButtonPosition: (int)buttonNumber buttonArea:(float)bArea{
@@ -76,5 +90,29 @@
     }
     
     return pos;
+}
++(void)setCurrentSkin: (int)skinID {
+    NSUserDefaults *nd = [NSUserDefaults standardUserDefaults];
+    [nd setObject:[[self skinList] objectAtIndex:skinID] forKey:@"current_player_skin"];
+    [nd synchronize];
+}
++(void)onSkinPress: (id)sender {
+    UIButton *skinButton = (UIButton*)sender;
+    UIView *daScrollView = [skinButton superview];
+    UIView *v = [daScrollView superview];
+    
+    [daScrollView removeFromSuperview];
+    [self setCurrentSkin:(int)(skinButton.tag - 200)];
+    [self addSkinScrollList:v];
+    
+}
++(NSString*)getCurrentSkin {
+    NSUserDefaults *nd = [NSUserDefaults standardUserDefaults];
+    NSString *textureName = [nd objectForKey:@"current_player_skin"];
+    
+    if(textureName == nil){
+        return @"player_1";
+    }
+    else return textureName;
 }
 @end
