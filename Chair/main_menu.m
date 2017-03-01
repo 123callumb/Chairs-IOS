@@ -19,27 +19,27 @@
     [self setBackgroundColor:[SKColor whiteColor]];
     
     //title Texture
-    UIImageView *title = [[UIImageView alloc]initWithFrame:CGRectMake(menu_view.frame.size.width/2-((menu_view.frame.size.width/1.35)/2),menu_view.frame.size.height/6,menu_view.frame.size.width/1.35,menu_view.frame.size.height/8)];
+    UIImageView *title = [[UIImageView alloc]initWithFrame:CGRectMake(menu_view.frame.size.width/2-((menu_view.frame.size.width/1.35)/2),menu_view.frame.size.height/4,menu_view.frame.size.width/1.35,menu_view.frame.size.height/8)];
     [title setImage:[UIImage imageNamed:@"menuTitle"]];
     
     //play button
     UIButton *play_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [play_button addTarget:self action:@selector(play_button_action:) forControlEvents:UIControlEventTouchUpInside];
-    play_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)+(menu_view.frame.size.width/4.2),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
-    [play_button setImage:[UIImage imageNamed:@"menu_button_play"]forState:UIControlStateNormal];
+    play_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)+(menu_view.frame.size.width/4.2),menu_view.frame.size.height/2.5,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    [play_button setImage:[UIImage imageNamed:@"playButton"]forState:UIControlStateNormal];
     
     //leaderboards button
     SEL aSel_leaderboards = @selector(leaderboards_button_action:);
     UIButton *leaderboards_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [leaderboards_button addTarget:self action:aSel_leaderboards forControlEvents:UIControlEventTouchUpInside];
-    leaderboards_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
-    [leaderboards_button setImage:[UIImage imageNamed:@"menu_button_stats"]forState:UIControlStateNormal];
+    leaderboards_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10),menu_view.frame.size.height/2.5,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    [leaderboards_button setImage:[UIImage imageNamed:@"scoresButton"]forState:UIControlStateNormal];
     
     //skins button
     UIButton *skins_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [skins_button addTarget:self action:@selector(skins_button_action:) forControlEvents:UIControlEventTouchUpInside];
-    skins_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)-(menu_view.frame.size.width/4.2),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
-    [skins_button setImage:[UIImage imageNamed:@"menu_button_skin"]forState:UIControlStateNormal];
+    skins_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)-(menu_view.frame.size.width/4.2),menu_view.frame.size.height/2.5,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    [skins_button setImage:[UIImage imageNamed:@"skinButton"]forState:UIControlStateNormal];
     
     [skinUI addBackgroundItems:view];
     
@@ -71,7 +71,15 @@
     
 }
 -(void)skins_button_action:(id)sender{
+    UIButton *but = (UIButton*)sender;
+    UIView *v = [but superview];
+    UIView *v1 = [v superview];
 
+    [skinUI addSkinSelectorUI:v1];
+
+    [UIView animateWithDuration:0.3 animations:^{
+            v.frame = CGRectMake(v.frame.size.width,0,v.frame.size.width,v.frame.size.height);
+    }];
 }
 @end
 
