@@ -35,17 +35,20 @@
 }
 
 +(void)addBackgroundItems: (UIView*)v {
-    UIImage *object_1 = [UIImage imageNamed:@"sceneObject_1"];
+    UIImage *object_1 = [UIImage imageNamed:@"sceneObject_3"];
     UIImage *object_2 = [UIImage imageNamed:@"sceneObject_2"];
     
     UIImageView *bgObj = [[UIImageView alloc] initWithImage:object_1];
     UIImageView *bgObj1 = [[UIImageView alloc] initWithImage:object_2];
     
-    float objW = v.frame.size.width;
-    float objH = v.frame.size.height/2;
+    float objW = v.frame.size.width*1.8;
+    float objH = v.frame.size.height/2.4;
     float obj1H = v.frame.size.height/4;
+
     
-    [bgObj setFrame:CGRectMake(0, v.frame.size.height-objH, objW, objH)];
+    [bgObj setFrame:CGRectMake(v.frame.size.width/2 - objW/2, v.frame.size.height-objH, objW, objH)];
+    [bgObj setTag:110];
+    
     [bgObj1 setFrame:CGRectMake(0, 0, objW, obj1H)];
     
     [v addSubview:bgObj];
@@ -77,10 +80,12 @@
     UIView *mainView = [v superview];
     
     UIView *menu = [mainView viewWithTag:100];
+    UIView *backdrop = [mainView viewWithTag:110];
     
     [UIView animateWithDuration:0.3 animations:^{
         [menu setFrame:CGRectMake(0, 0, mainView.frame.size.width, mainView.frame.size.height)];
         [v setFrame:CGRectMake(-mainView.frame.size.width, 0, v.frame.size.width, v.frame.size.height)];
+        [backdrop setFrame:CGRectMake(v.frame.size.width/2 - backdrop.frame.size.width/2, v.frame.size.height-backdrop.frame.size.height, backdrop.frame.size.width, backdrop.frame.size.height)];
     }];
 }
 @end

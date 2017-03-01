@@ -61,7 +61,6 @@
         
         [tick setFrame:CGRectMake(buttonArea - tickArea, buttonArea - tickArea, tickArea, tickArea)];
         [skinButton addSubview:tick];
-        NSLog(@"%d is currently selected", skinNo);
     }
     
     [v addSubview:skinButton];
@@ -110,9 +109,10 @@
     NSUserDefaults *nd = [NSUserDefaults standardUserDefaults];
     NSString *textureName = [nd objectForKey:@"current_player_skin"];
     
-    if(textureName == nil){
-        return @"player_1";
+    if(![textureName containsString:@"player"]){
+        [self setCurrentSkin:0];
     }
-    else return textureName;
+    
+    return textureName;
 }
 @end

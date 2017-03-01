@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6108306A1E6586CC005E397F /* main_game.m in Sources */ = {isa = PBXBuildFile; fileRef = 610830691E6586CC005E397F /* main_game.m */; };
 		617E11AB1E64CB580087DFAD /* main_menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E11AA1E64CB580087DFAD /* main_menu.m */; };
+		75795EF91E674CBA00CC74E9 /* coinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 75795EF81E674CBA00CC74E9 /* coinData.m */; };
 		758E82B61E644EA6005EC565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82B51E644EA6005EC565 /* main.m */; };
 		758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82B81E644EA6005EC565 /* AppDelegate.m */; };
 		758E82BB1E644EA6005EC565 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 758E82BA1E644EA6005EC565 /* GameScene.sks */; };
@@ -47,6 +48,8 @@
 		610830691E6586CC005E397F /* main_game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main_game.m; path = Chair/main_game.m; sourceTree = "<group>"; };
 		617E11A91E64CB580087DFAD /* main_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_menu.h; sourceTree = "<group>"; };
 		617E11AA1E64CB580087DFAD /* main_menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_menu.m; sourceTree = "<group>"; };
+		75795EF71E674CBA00CC74E9 /* coinData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coinData.h; path = Chair/Coins/coinData.h; sourceTree = "<group>"; };
+		75795EF81E674CBA00CC74E9 /* coinData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = coinData.m; path = Chair/Coins/coinData.m; sourceTree = "<group>"; };
 		758E82B11E644EA6005EC565 /* Chairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E82B51E644EA6005EC565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		758E82B71E644EA6005EC565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,9 +123,19 @@
 			name = "main menu";
 			sourceTree = "<group>";
 		};
+		75795EF61E674CA600CC74E9 /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				75795EF71E674CBA00CC74E9 /* coinData.h */,
+				75795EF81E674CBA00CC74E9 /* coinData.m */,
+			);
+			name = Coins;
+			sourceTree = "<group>";
+		};
 		758E82A81E644EA5005EC565 = {
 			isa = PBXGroup;
 			children = (
+				75795EF61E674CA600CC74E9 /* Coins */,
 				759D60451E66F5E800DF3F55 /* skinMenu */,
 				610830671E6586B3005E397F /* game */,
 				617E11A81E64CB1E0087DFAD /* main menu */,
@@ -338,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75795EF91E674CBA00CC74E9 /* coinData.m in Sources */,
 				759D60481E66F61700DF3F55 /* skinUI.m in Sources */,
 				758E82C31E644EA6005EC565 /* GameViewController.m in Sources */,
 				758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */,
