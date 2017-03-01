@@ -37,9 +37,16 @@
     leaderboards_button.frame = CGRectMake(menu_view.frame.size.width/3-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
     [leaderboards_button setImage:[UIImage imageNamed:@"menu_button_stats"]forState:UIControlStateNormal];
     
+    //skins button
+    UIButton *skins_button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [skins_button addTarget:self action:@selector(skins_button_action:) forControlEvents:UIControlEventTouchUpInside];
+    skins_button.frame = CGRectMake((2*(menu_view.frame.size.width/3))-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    [skins_button setImage:[UIImage imageNamed:@"menu_button_skins"]forState:UIControlStateNormal];
+    
     [view addSubview:menu_view];
     [menu_view addSubview:background];
     [menu_view addSubview:play_button];
+    [menu_view addSubview:skins_button];
     [menu_view addSubview:leaderboards_button];
     [menu_view addSubview:title];
 }
