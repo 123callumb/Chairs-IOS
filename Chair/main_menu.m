@@ -71,17 +71,6 @@
     
 }
 -(void)skins_button_action:(id)sender{
-    UIButton *but = (UIButton*)sender;
-    UIView *v = [but superview];
-    UIView *v1 = [v superview];
-    
-    [skinUI addSkinSelectorUI:v1];
-    
-    [UIView animateWithDuration:0.3 animations:^{
-        v.frame = CGRectMake(v.frame.size.width,0,v.frame.size.width,v.frame.size.height);
-    } completion:^(BOOL finished){
-
-    }];
 
 }
 @end
