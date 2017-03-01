@@ -20,6 +20,9 @@
 		758E82CB1E644EA6005EC565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E82C91E644EA6005EC565 /* LaunchScreen.storyboard */; };
 		758E82D61E644EA6005EC565 /* ChairTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82D51E644EA6005EC565 /* ChairTests.m */; };
 		758E82E11E644EA6005EC565 /* ChairUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82E01E644EA6005EC565 /* ChairUITests.m */; };
+		759D60481E66F61700DF3F55 /* skinUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D60471E66F61700DF3F55 /* skinUI.m */; };
+		759D604B1E66FF9900DF3F55 /* menuUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D604A1E66FF9900DF3F55 /* menuUI.m */; };
+		759D604E1E672E9700DF3F55 /* skinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 759D604D1E672E9700DF3F55 /* skinData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,12 @@
 		758E82DC1E644EA6005EC565 /* ChairsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChairsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E82E01E644EA6005EC565 /* ChairUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChairUITests.m; sourceTree = "<group>"; };
 		758E82E21E644EA6005EC565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759D60461E66F61700DF3F55 /* skinUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skinUI.h; path = "Chair/Skin Menu/skinUI.h"; sourceTree = "<group>"; };
+		759D60471E66F61700DF3F55 /* skinUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = skinUI.m; path = "Chair/Skin Menu/skinUI.m"; sourceTree = "<group>"; };
+		759D60491E66FF9900DF3F55 /* menuUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = menuUI.h; path = Chair/menuUI.h; sourceTree = "<group>"; };
+		759D604A1E66FF9900DF3F55 /* menuUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = menuUI.m; path = Chair/menuUI.m; sourceTree = "<group>"; };
+		759D604C1E672E9700DF3F55 /* skinData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skinData.h; path = "Chair/Skin Menu/skinData.h"; sourceTree = "<group>"; };
+		759D604D1E672E9700DF3F55 /* skinData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = skinData.m; path = "Chair/Skin Menu/skinData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,8 @@
 			children = (
 				617E11A91E64CB580087DFAD /* main_menu.h */,
 				617E11AA1E64CB580087DFAD /* main_menu.m */,
+				759D60491E66FF9900DF3F55 /* menuUI.h */,
+				759D604A1E66FF9900DF3F55 /* menuUI.m */,
 			);
 			name = "main menu";
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 		758E82A81E644EA5005EC565 = {
 			isa = PBXGroup;
 			children = (
+				759D60451E66F5E800DF3F55 /* skinMenu */,
 				610830671E6586B3005E397F /* game */,
 				617E11A81E64CB1E0087DFAD /* main menu */,
 				758E82B31E644EA6005EC565 /* Chair */,
@@ -175,6 +187,17 @@
 				758E82E21E644EA6005EC565 /* Info.plist */,
 			);
 			path = ChairUITests;
+			sourceTree = "<group>";
+		};
+		759D60451E66F5E800DF3F55 /* skinMenu */ = {
+			isa = PBXGroup;
+			children = (
+				759D60461E66F61700DF3F55 /* skinUI.h */,
+				759D60471E66F61700DF3F55 /* skinUI.m */,
+				759D604C1E672E9700DF3F55 /* skinData.h */,
+				759D604D1E672E9700DF3F55 /* skinData.m */,
+			);
+			name = skinMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759D60481E66F61700DF3F55 /* skinUI.m in Sources */,
 				758E82C31E644EA6005EC565 /* GameViewController.m in Sources */,
 				758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */,
 				6108306A1E6586CC005E397F /* main_game.m in Sources */,
+				759D604E1E672E9700DF3F55 /* skinData.m in Sources */,
 				758E82C01E644EA6005EC565 /* GameScene.m in Sources */,
 				758E82B61E644EA6005EC565 /* main.m in Sources */,
+				759D604B1E66FF9900DF3F55 /* menuUI.m in Sources */,
 				617E11AB1E64CB580087DFAD /* main_menu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
