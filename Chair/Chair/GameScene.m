@@ -18,7 +18,6 @@
     SKScene *s2;
     s2 = [[main_menu alloc]initWithSize:self.size];
     s2.scaleMode = SKSceneScaleModeAspectFill;
-    s2.scaleMode = SKSceneScaleModeAspectFill;
     [self.view presentScene:s2 transition:[SKTransition crossFadeWithDuration:.3]];
 }
 -(void)update:(CFTimeInterval)currentTime {

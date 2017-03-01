@@ -7,12 +7,15 @@
 //
 
 #import "main_menu.h"
+#import "main_game.h"
 
-@implementation main_menu
+@implementation main_menu{
+    main_game *game;
+}
 -(void)didMoveToView:(SKView *)view {
     UIView *menu_view = [[UIView alloc] initWithFrame:view.frame];
     menu_view.tag = 100;
-    [menu_view setBackgroundColor:[UIColor blueColor]];
+    [self setBackgroundColor:[SKColor whiteColor]];
     
     //background texture
     UIImageView *background = [[UIImageView alloc]initWithFrame:CGRectMake(0,0, view.frame.size.width, view.frame.size.height)];
@@ -44,11 +47,26 @@
 -(void)update:(CFTimeInterval)currentTime {
 }
 -(void)play_button_action:(id)sender{
-}
--(void)leaderboards_button_action:(id)sender{
+    
+    UIButton *but = (UIButton*)sender;
+    UIView *v = [but superview];
+    UIView *v1 = [v superview];
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        v.frame = CGRectMake(-v1.frame.size.width,0,v1.frame.size.width,v1.frame.size.height);
+    } completion:^(BOOL finished){
+    [v removeFromSuperview];
+    }];
+    
+    
+    SKScene *s2;
+    s2 = [[main_game alloc] initWithSize:self.size];
+    s2.scaleMode = SKSceneScaleModeAspectFill;
+    [self.view presentScene:s2 transition:[SKTransition pushWithDirection:SKTransitionDirectionLeft duration:.3]];
+    
     
 }
--(void)settings_button_action:(id)sender{
+-(void)leaderboards_button_action:(id)sender{
     
 }
 @end
