@@ -28,20 +28,21 @@
     //play button
     UIButton *play_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [play_button addTarget:self action:@selector(play_button_action:) forControlEvents:UIControlEventTouchUpInside];
-    play_button.frame = CGRectMake((2*(menu_view.frame.size.width/3))-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    play_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)+(menu_view.frame.size.width/4.2),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
     [play_button setImage:[UIImage imageNamed:@"menu_button_play"]forState:UIControlStateNormal];
+    
     //leaderboards button
     SEL aSel_leaderboards = @selector(leaderboards_button_action:);
     UIButton *leaderboards_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [leaderboards_button addTarget:self action:aSel_leaderboards forControlEvents:UIControlEventTouchUpInside];
-    leaderboards_button.frame = CGRectMake(menu_view.frame.size.width/3-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    leaderboards_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
     [leaderboards_button setImage:[UIImage imageNamed:@"menu_button_stats"]forState:UIControlStateNormal];
     
     //skins button
     UIButton *skins_button = [UIButton buttonWithType:UIButtonTypeCustom];
     [skins_button addTarget:self action:@selector(skins_button_action:) forControlEvents:UIControlEventTouchUpInside];
-    skins_button.frame = CGRectMake((2*(menu_view.frame.size.width/3))-(menu_view.frame.size.width/10),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
-    [skins_button setImage:[UIImage imageNamed:@"menu_button_skins"]forState:UIControlStateNormal];
+    skins_button.frame = CGRectMake(menu_view.frame.size.width/2-(menu_view.frame.size.width/10)-(menu_view.frame.size.width/4.2),menu_view.frame.size.height/3,menu_view.frame.size.width/5,menu_view.frame.size.width/5);
+    [skins_button setImage:[UIImage imageNamed:@"menu_button_skin"]forState:UIControlStateNormal];
     
     [view addSubview:menu_view];
     [menu_view addSubview:background];
@@ -54,7 +55,6 @@
 -(void)update:(CFTimeInterval)currentTime {
 }
 -(void)play_button_action:(id)sender{
-    
     UIButton *but = (UIButton*)sender;
     UIView *v = [but superview];
     UIView *v1 = [v superview];
@@ -65,15 +65,15 @@
     [v removeFromSuperview];
     }];
     
-    
     SKScene *s2;
     s2 = [[main_game alloc] initWithSize:self.size];
     s2.scaleMode = SKSceneScaleModeAspectFill;
     [self.view presentScene:s2 transition:[SKTransition pushWithDirection:SKTransitionDirectionLeft duration:.3]];
-    
-    
 }
 -(void)leaderboards_button_action:(id)sender{
+    
+}
+-(void)skins_button_action:(id)sender{
     
 }
 @end
