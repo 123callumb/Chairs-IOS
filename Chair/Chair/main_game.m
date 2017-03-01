@@ -10,7 +10,7 @@
 
 @implementation main_game
 -(void)didMoveToView:(SKView *)view {
-
+    [self setBackgroundColor:[SKColor blueColor]];
 }
 -(void)update:(CFTimeInterval)currentTime {
 
