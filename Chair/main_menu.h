@@ -9,5 +9,4 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface main_menu : SKScene
--(void)didMoveToView:(SKView *)view;
 @end
