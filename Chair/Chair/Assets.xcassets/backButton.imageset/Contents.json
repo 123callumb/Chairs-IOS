@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "menu_button_skin.png",
+      "filename" : "backButton.png",
       "scale" : "1x"
     },
     {
