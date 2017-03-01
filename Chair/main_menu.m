@@ -9,6 +9,7 @@
 #import "main_menu.h"
 #import "main_game.h"
 #import "skinUI.h"
+#import "coinData.h"
 
 @implementation main_menu{
     main_game *game;
@@ -16,7 +17,7 @@
 -(void)didMoveToView:(SKView *)view {
     UIView *menu_view = [[UIView alloc] initWithFrame:view.frame];
     menu_view.tag = 100;
-    [self setBackgroundColor:[SKColor whiteColor]];
+    [self setBackgroundColor:[SKColor colorWithRed:238.0f/255.0f green:238.0f/255.0f blue:238.0f/255.0f alpha:1]];
     
     //title Texture
     UIImageView *title = [[UIImageView alloc]initWithFrame:CGRectMake(menu_view.frame.size.width/2-((menu_view.frame.size.width/1.35)/2),menu_view.frame.size.height/4,menu_view.frame.size.width/1.35,menu_view.frame.size.height/8)];
@@ -48,6 +49,10 @@
     [menu_view addSubview:skins_button];
     [menu_view addSubview:leaderboards_button];
     [menu_view addSubview:title];
+    
+    float coinPadding = view.frame.size.width/40;
+    
+    [coinData createCoinLabel:view position:CGPointMake(coinPadding, coinPadding) coinArea:view.frame.size.width/14];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -75,10 +80,13 @@
     UIView *v = [but superview];
     UIView *v1 = [v superview];
 
+    UIView *bgObj = [v1 viewWithTag:110];
     [skinUI addSkinSelectorUI:v1];
 
     [UIView animateWithDuration:0.3 animations:^{
             v.frame = CGRectMake(v.frame.size.width,0,v.frame.size.width,v.frame.size.height);
+        [bgObj setFrame:CGRectMake(0, v1.frame.size.height-bgObj.frame.size.height, bgObj.frame.size.width, bgObj.frame.size.height)];
+
     }];
 }
 @end
