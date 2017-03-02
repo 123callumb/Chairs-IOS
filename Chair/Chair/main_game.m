@@ -12,7 +12,7 @@
 @implementation main_game
 -(void)didMoveToView:(SKView *)view {
     [self setBackgroundColor:[SKColor whiteColor]];
-    [chair load5Chairs:0 movementSpeed:0 animationTime:0 scene:self];
+    [chair load2Chairs:0 movementSpeed:0 animationTime:0 scene:self];
     [chair updateRotation];
 }
 -(void)update:(CFTimeInterval)currentTime {
