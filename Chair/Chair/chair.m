@@ -7,6 +7,8 @@
 //
 
 #import "chair.h"
+#import "enemy.h"
+#import "player.h"
 
 SKSpriteNode *center;
 SKSpriteNode *chair_0;
@@ -24,6 +26,7 @@ double *turnSpeed = nil;
     float xoffset = 75;
     float yoffset = 129.9;
     double radius_ = 150;
+    
     turnSpeed = &speed;
     
     center = [SKSpriteNode spriteNodeWithImageNamed:@"chair"];
@@ -64,6 +67,10 @@ double *turnSpeed = nil;
     chair_5.size =CGSizeMake(s.frame.size.width/size, s.frame.size.width/size);
     chair_5.anchorPoint = CGPointMake(.5, .5);
     chair_5.zRotation = -1.0472;
+    
+    //loads enemies for this set
+    [enemy load6Enemy:0 movementSpeed:0 animationTime:0 scene:s];
+    [player loadPlayer:300 scene:s];
     
     [center addChild:chair_0];
     [center addChild:chair_1];
@@ -114,6 +121,9 @@ double *turnSpeed = nil;
     chair_4.anchorPoint = CGPointMake(.5, .5);
     chair_4.zRotation = -2.19911;
     
+    [enemy load5Enemy:0 movementSpeed:0 animationTime:0 scene:s];
+    [player loadPlayer:300 scene:s];
+    
     [center addChild:chair_0];
     [center addChild:chair_1];
     [center addChild:chair_2];
@@ -151,6 +161,9 @@ double *turnSpeed = nil;
     chair_3.position = CGPointMake(0,-radius_);
     chair_3.size =CGSizeMake(s.frame.size.width/size, s.frame.size.width/size);
     chair_3.anchorPoint = CGPointMake(.5, .5);
+    
+    [enemy load4Enemy:0 movementSpeed:0 animationTime:0 scene:s];
+    [player loadPlayer:300 scene:s];
     
     [center addChild:chair_0];
     [center addChild:chair_1];
@@ -220,10 +233,9 @@ double *turnSpeed = nil;
     [s addChild:center];
 }
 
-+(void)updateRotation{
-    SKAction *rotation = [SKAction rotateByAngle:M_PI duration:turnSpeed];
-    SKAction *continuous = [SKAction repeatActionForever:rotation];
-    [center runAction:continuous];
++(void)rotateChair:(double)angle duration:(int)i{
+    SKAction *r1 = [SKAction rotateByAngle:angle duration:i];
+    [center runAction:r1];
 }
 -(void)on_tap:(id)sender{
     

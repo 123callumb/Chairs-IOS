@@ -14,5 +14,5 @@
 +(void)load4Chairs:(double)radius movementSpeed:(double)speed animationTime:(double)time scene:(SKScene*)s;
 +(void)load3Chairs:(double)radius movementSpeed:(double)speed animationTime:(double)time scene:(SKScene*)s;
 +(void)load2Chairs:(double)radius movementSpeed:(double)speed animationTime:(double)time scene:(SKScene*)s;
-+(void)updateRotation;
++(void)rotateChair:(double)angle duration:(int)i;
 @end
