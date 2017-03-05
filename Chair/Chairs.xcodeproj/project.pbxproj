@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6108306A1E6586CC005E397F /* main_game.m in Sources */ = {isa = PBXBuildFile; fileRef = 610830691E6586CC005E397F /* main_game.m */; };
-		6126E2431E66E72B0047B05C /* chair_controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6126E2421E66E72B0047B05C /* chair_controller.m */; };
+		610B9F661E6857FF00DEC983 /* enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B9F651E6857FF00DEC983 /* enemy.m */; };
+		610B9F691E6859ED00DEC983 /* player.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B9F681E6859ED00DEC983 /* player.m */; };
 		6126E2461E66E77A0047B05C /* chair.m in Sources */ = {isa = PBXBuildFile; fileRef = 6126E2451E66E77A0047B05C /* chair.m */; };
+		6150F0101E69AFFB00D5B71E /* state_rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6150F00F1E69AFFB00D5B71E /* state_rotate.m */; };
 		617E11AB1E64CB580087DFAD /* main_menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E11AA1E64CB580087DFAD /* main_menu.m */; };
 		75795EF91E674CBA00CC74E9 /* coinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 75795EF81E674CBA00CC74E9 /* coinData.m */; };
 		758E82B61E644EA6005EC565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758E82B51E644EA6005EC565 /* main.m */; };
@@ -48,10 +50,14 @@
 /* Begin PBXFileReference section */
 		610830681E6586CC005E397F /* main_game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main_game.h; path = Chair/main_game.h; sourceTree = "<group>"; };
 		610830691E6586CC005E397F /* main_game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main_game.m; path = Chair/main_game.m; sourceTree = "<group>"; };
-		6126E2411E66E72B0047B05C /* chair_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chair_controller.h; path = Chair/chair_controller.h; sourceTree = "<group>"; };
-		6126E2421E66E72B0047B05C /* chair_controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = chair_controller.m; path = Chair/chair_controller.m; sourceTree = "<group>"; };
+		610B9F641E6857FF00DEC983 /* enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enemy.h; sourceTree = "<group>"; };
+		610B9F651E6857FF00DEC983 /* enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = enemy.m; sourceTree = "<group>"; };
+		610B9F671E6859ED00DEC983 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		610B9F681E6859ED00DEC983 /* player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = player.m; sourceTree = "<group>"; };
 		6126E2441E66E77A0047B05C /* chair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chair.h; path = Chair/chair.h; sourceTree = "<group>"; };
 		6126E2451E66E77A0047B05C /* chair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = chair.m; path = Chair/chair.m; sourceTree = "<group>"; };
+		6150F00E1E69AFFB00D5B71E /* state_rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state_rotate.h; sourceTree = "<group>"; };
+		6150F00F1E69AFFB00D5B71E /* state_rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = state_rotate.m; sourceTree = "<group>"; };
 		617E11A91E64CB580087DFAD /* main_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_menu.h; sourceTree = "<group>"; };
 		617E11AA1E64CB580087DFAD /* main_menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_menu.m; sourceTree = "<group>"; };
 		75795EF71E674CBA00CC74E9 /* coinData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coinData.h; path = Chair/Coins/coinData.h; sourceTree = "<group>"; };
@@ -114,10 +120,14 @@
 			children = (
 				6126E2441E66E77A0047B05C /* chair.h */,
 				6126E2451E66E77A0047B05C /* chair.m */,
-				6126E2411E66E72B0047B05C /* chair_controller.h */,
-				6126E2421E66E72B0047B05C /* chair_controller.m */,
+				610B9F641E6857FF00DEC983 /* enemy.h */,
+				610B9F651E6857FF00DEC983 /* enemy.m */,
+				610B9F671E6859ED00DEC983 /* player.h */,
+				610B9F681E6859ED00DEC983 /* player.m */,
 				610830681E6586CC005E397F /* main_game.h */,
 				610830691E6586CC005E397F /* main_game.m */,
+				6150F00E1E69AFFB00D5B71E /* state_rotate.h */,
+				6150F00F1E69AFFB00D5B71E /* state_rotate.m */,
 			);
 			name = game;
 			sourceTree = "<group>";
@@ -361,15 +371,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6126E2431E66E72B0047B05C /* chair_controller.m in Sources */,
 				6126E2461E66E77A0047B05C /* chair.m in Sources */,
 				75795EF91E674CBA00CC74E9 /* coinData.m in Sources */,
 				759D60481E66F61700DF3F55 /* skinUI.m in Sources */,
 				758E82C31E644EA6005EC565 /* GameViewController.m in Sources */,
 				758E82B91E644EA6005EC565 /* AppDelegate.m in Sources */,
 				6108306A1E6586CC005E397F /* main_game.m in Sources */,
+				6150F0101E69AFFB00D5B71E /* state_rotate.m in Sources */,
 				759D604E1E672E9700DF3F55 /* skinData.m in Sources */,
+				610B9F691E6859ED00DEC983 /* player.m in Sources */,
 				758E82C01E644EA6005EC565 /* GameScene.m in Sources */,
+				610B9F661E6857FF00DEC983 /* enemy.m in Sources */,
 				758E82B61E644EA6005EC565 /* main.m in Sources */,
 				759D604B1E66FF9900DF3F55 /* menuUI.m in Sources */,
 				617E11AB1E64CB580087DFAD /* main_menu.m in Sources */,

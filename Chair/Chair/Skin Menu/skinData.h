@@ -10,4 +10,5 @@
 
 @interface skinData : UIView
 +(void)addSkinScrollList:(UIView*)v;
++(NSString*)getCurrentSkin;
 @end
