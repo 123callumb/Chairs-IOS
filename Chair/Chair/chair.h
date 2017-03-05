@@ -15,4 +15,10 @@
 +(void)load3Chairs:(double)radius movementSpeed:(double)speed animationTime:(double)time scene:(SKScene*)s;
 +(void)load2Chairs:(double)radius movementSpeed:(double)speed animationTime:(double)time scene:(SKScene*)s;
 +(void)rotateChair:(double)angle duration:(int)i;
++(CGPoint)getChair_0Val;
++(CGPoint)getChair_1Val;
++(CGPoint)getChair_2Val;
++(CGPoint)getChair_3Val;
++(CGPoint)getChair_4Val;
++(CGPoint)getChair_5Val;
 @end

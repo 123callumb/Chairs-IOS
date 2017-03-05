@@ -22,7 +22,7 @@ int duration;
     duration = 7;
     
     [self setBackgroundColor:[SKColor whiteColor]];
-    [chair load4Chairs:0 movementSpeed:0 animationTime:0 scene:self];
+    [chair load2Chairs:0 movementSpeed:0 animationTime:0 scene:self];
     [state_rotate state_rotate:self angle:angle duration:duration];
 }
 
